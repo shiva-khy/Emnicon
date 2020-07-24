@@ -1,0 +1,212 @@
+html {
+  padding: 25px;
+}
+
+#Gender {
+  color: #999999;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.container.question-form-container .fieldset-wrapper {
+  background-color: #f2f2f2;
+  padding: 15px;
+}
+.container.question-form-container #gender-radios-wrapper {
+  border: 0.5px solid #f2f2f2;
+  padding: 10px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (max-width: 992px) {
+  .container.question-form-container #gender-radios-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+}
+.container.question-form-container #gender-radios-wrapper label {
+  margin: 0px;
+  margin-right: 15px;
+}
+.container.question-form-container #gender-radios-wrapper label input {
+  margin-right: 5px;
+}
+.container.question-form-container #agree-checkbox-wrapper {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #f2f2f2;
+  padding: 10px;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .container.question-form-container #agree-checkbox-wrapper {
+    -webkit-box-align: start;
+            align-items: flex-start;
+    position: relative;
+  }
+}
+.container.question-form-container #agree-checkbox-wrapper input {
+  margin-right: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .container.question-form-container #agree-checkbox-wrapper input {
+    margin-top: 7px;
+  }
+}
+.container.question-form-container #agree-checkbox-wrapper label {
+  margin: 0px;
+  position: relative;
+}
+.container.question-form-container #agree-checkbox-wrapper label a {
+  text-decoration: underline;
+  color: #e67300;
+}
+@media screen and (max-width: 768px) {
+  .container.question-form-container #agree-checkbox-wrapper label {
+    margin-top: -5px;
+    position: relative;
+  }
+}
+.container.question-form-container .form-headline {
+  background-color: #ffcc99;
+  border-bottom: 0.25 px solid #ffffff;
+  padding: 8px;
+  margin-bottom: 1px;
+  height: 40px;
+  text-align: center;
+  color: #cc6600;
+  text-shadow: 4px 4px 4px #e27e36;
+  font-style: oblique;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.form-input-block {
+  margin-top: 1px;
+  width: 100%;
+  /*input-wrapper*/
+}
+.form-input-block .input-wrapper {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-input-block .input-wrapper label {
+  width: 100%;
+}
+.form-input-block .input-wrapper input[type=text], .form-input-block .input-wrapper input[type=email], .form-input-block .input-wrapper input[type=tel],
+.form-input-block .input-wrapper .custom-select {
+  width: 65%;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+.form-input-block .input-wrapper input[type=text]:not(.custom-select), .form-input-block .input-wrapper input[type=email]:not(.custom-select), .form-input-block .input-wrapper input[type=tel]:not(.custom-select),
+.form-input-block .input-wrapper .custom-select:not(.custom-select) {
+  padding: 6px;
+}
+.form-input-block .input-wrapper .agree-label {
+  width: 100%;
+}
+
+/*form-input-block*/
+/*fieldset*/
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+#message {
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.submit {
+  background-color: #e67300;
+  border: none;
+  color: #f2f2f2;
+  float: left;
+  padding: 0.625em 2em 0.625em 2em;
+  margin-top: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.submit:hover {
+  cursor: Auto;
+  background-color: #ff9933;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*.container.question-form-container*/
+.question-form-container * {
+  color: #474747;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+textarea, .custom-select {
+  overflow: auto;
+  width: 100%;
+}
+@media screen and (max-width: 992px) {
+  textarea, .custom-select {
+    width: 65%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container.question-form-container * {
+    color: #474747;
+    font-weight: 300;
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container.question-form-container {
+    /*.question-form*/
+  }
+  .container.question-form-container .question-form {
+    /*fieldset*/
+  }
+  .container.question-form-container .question-form #regular-info-input-group {
+    /*form-input-block*/
+  }
+  .container.question-form-container .question-form #regular-info-input-group #agree-error {
+    padding-left: 0;
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block {
+    float: left;
+    margin: auto;
+    width: calc(( 100% - 10px ) / 2);
+    /*input-wrapper*/
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block:nth-child(1), .container.question-form-container .question-form #regular-info-input-group .form-input-block:nth-child(3), .container.question-form-container .question-form #regular-info-input-group .form-input-block:nth-child(5) {
+    margin-right: 10px;
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper label {
+    width: 100%;
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper label.error, .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper label.error.success {
+    width: 100%;
+    padding-left: 0px;
+    float: left;
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper input[type=text], .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper input[type=email], .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper input[type=tel], .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper .custom-select {
+    width: 100%;
+  }
+  .container.question-form-container .question-form #regular-info-input-group .form-input-block .input-wrapper .agree-label {
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Anfrage Online-Präsentation</title>
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+</head>
+
+<body>  
+  <section id=form>
+  <div class="container question-form-container">
+     <h2 class="form-headline">Anfrage Online-Präsentation:</h2>
+    <div class="form-wrapper">
+      <form class="question-form" id="signupForm">
+        
+        <div class="fieldset-wrapper">
+         <label id="Gender">Alle mit * gekennzeichneten Felder sind Pflichtfelder.</label>
+          <fieldset id="gender-radios-group">
+           <div class="form-input-block" id="gender-radios-wrapper">
+            <label><input type="radio" name="Gender" value="Frau" id="contactChoice1" checked/>Frau</label>
+            <label><input type="radio" name="Gender" value="Herr" id="contactChoice2"/>Herr</label>
+             <label><input type="radio" name="Gender" value="Frau" id="contactChoice3" />Divers</label>
+           </div>
+          </fieldset>
+                  
+          <fieldset id="regular-info-input-group">
+            <div class="form-input-block">
+            <div class="input-wrapper">
+              <label for="firstname">Vorname: </label>
+              <input id="firstname" name="firstname" type="text">
+            </div>
+            </div>
+            <div class="form-input-block">
+              <div class="input-wrapper">
+                <label for="lastname">Nachname: </label>
+                <input id="lastname" name="lastname" type="text">
+              </div>
+            </div>
+              
+            <div class="form-input-block">
+             <div class="input-wrapper">
+                <label for="number">Rufnummer: </label>
+               <input id="number" name="number" type="tel" placeholder="+49 721 / 255 129 0" 
+                      pattern="^[0-9\-\+\s\(\)]*$" />
+             </div>
+            </div>
+        
+             <div class="form-input-block">
+               <div class="input-wrapper">
+                    <label for="email">Email-Adresse: *</label>
+                 <input id="email" name="email" type="email" placeholder="max@mustermann.de"  required>
+               </div>
+             </div>
+            
+             <div class="form-input-block">
+               <div class="input-wrapper">
+                 <label for="bank_company">Name des Unternehmens: </label>
+                 <input id="bank_company" name="bank_company" type="text">
+               </div>
+              </div>
+            
+             <div class="form-input-block">
+               <div class="input-wrapper">
+                 <div class="select-wrapper">
+                   <label for="topic">Thema: *</label> 
+                     <select class="custom-select" id="topic" name ="topic" required="">
+                       <option value=""  selected  ></option>
+                       <option value="consult">Konsultation</option>
+                       <option value="grafikService">Grafik-Service</option>
+                       <option value="WebCenters">Individualisierung des WebCenters  Unsere Dienstleistungspakete passen sich Ihren Bedürfnissen an.</option>
+                       <option value="coaching">Redaktionelles Coaching</option>
+                       <option value="other" data-path>andere...</option>
+                      </select>
+                   </div>    
+                 </div>
+              </div> 
+            
+            <br/>
+            
+            <div class="form-input-block">
+              <div class="input-wrapper">
+                <label for="message"> Nachricht: </label>
+                  <textarea name="message" id="message" rows="5"  placeholder="Ihre Nachricht an uns"></textarea>           
+            </fieldset>
+<legend id="check-agree"></legend>
+              <fieldset>
+               <div class="form-input-block" id="agree-checkbox-wrapper">
+                <input type="checkbox" id="agree" name="agree"  required>
+                  <label class="agree-label" for="agree">Ja, Ich habe die 
+                    <a href="#myModal" class="trigger-modal" data-toggle="modal">Datenschutzbestimmungen</a>
+                    der Emnicon AG zur Kenntnis genommen und stimme diesen zu.
+                 </label>
+               </div>
+             </fieldset>
+            </div><!--.fieldset-wrapper-->
+          
+      
+        <input class="submit" type="submit" value="submit">
+            
+      </form>
+    </div>
+
+    
+  </div><!-- end of container -->
+      
+      
+  </section>
+</body>
+</html>
+
+
